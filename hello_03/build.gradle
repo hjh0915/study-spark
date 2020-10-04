@@ -8,9 +8,9 @@
 
 plugins {
     // Apply the scala plugin to add support for Scala
-    id 'scala'
+    // id 'scala'
 
-    id "com.github.johnrengelman.shadow" version "5.2.0"
+    id "com.github.johnrengelman.shadow" version "6.0.0" apply false  
 }
 
 allprojects {
