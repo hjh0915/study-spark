@@ -14,6 +14,10 @@ settings.gradle 增加子项目名称
 > gradle build
 > gradle shadowJar
 
+子项目打包
+> gradle :brchrpt:build
+> gradle :brchrpt:shadowjar
+
 3、启动spark
 -----------
 > ./sbin/start-master.sh -h localhost
@@ -23,3 +27,5 @@ settings.gradle 增加子项目名称
 4、提交计算
 ----------
 > spark-submit --master spark://localhost:7077 --class brchqry.BrchQry ./brchqry/build/libs/brchqry-all.jar
+
+> spark-submit --master spark://localhost:7077 --deploy-mode client --total-executor-cores 2 --executor-memory 512M --class hello_01.SparkPi ./build/libs/hello_01-all.jar
