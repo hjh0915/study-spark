@@ -45,3 +45,11 @@ option(key, value)
 
 http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row
 
+spark日期时间
+============
+> spark-submit --master spark://localhost:7077 --conf "spark.pyspark.driver.python=/home/hjh/.pyenv/versions/gopy3.7/bin/python" --conf "spark.pyspark.python=/home/hjh/.pyenv/versions/gopy3.7/bin/python" --packages com.datastax.spark:spark-cassandra-connector_2.11:2.5.1,com.github.jnr:jnr-posix:3.1.1 test04.py
+
+有一个struct错误
+---------------
+通过https://stackoverflow.com/questions/58138259/spark-sql-how-to-query-subset-of-struct-fields-in-arraystruct
+猜想取值方式为t.start取值
