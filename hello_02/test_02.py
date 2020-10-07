@@ -26,7 +26,7 @@ class CassDB:
             password="cassandra"
         )
 
-        self.cluster = Cluster(['localhost'], auth_provider=auth_provider)
+        self.cluster = Cluster(['192.168.31.195'], auth_provider=auth_provider)
         self.session = self.cluster.connect('finance')
 
     def close(self):

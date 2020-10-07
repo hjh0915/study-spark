@@ -3,7 +3,7 @@ from pyspark import SparkContext, SparkConf
 
 def main():
     conf = SparkConf()
-    conf.set("spark.cassandra.connection.host", "localhost")
+    conf.set("spark.cassandra.connection.host", "192.168.31.195")
     conf.set("spark.cassandra.auth.username", "cassandra")
     conf.set("spark.cassandra.auth.password", "cassandra")
 
